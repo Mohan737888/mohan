@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Times - News Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+        }
+        .main-article {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>🌍 Global Times News</h1>
+        <p>Your daily source of authentic news and updates</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#world">World</a>
+        <a href="#sports">Sports</a>
+        <a href="#entertainment">Entertainment</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <section class="main-article" id="world">
+            <h2>Top Headline: Global Climate Change Updates</h2>
+            <img src="https://cdn.pixabay.com/photo/2019/03/21/21/35/climate-change-4074221_1280.jpg" alt="Climate Change Image">
+            <p>
+                Climate change continues to be one of the biggest challenges facing our planet. 
+                Learn more from our <a href="https://www.un.org/en/climatechange" target="_blank">UN Climate Change Report</a>.
+            </p>
+
+            <!-- Embedded YouTube Video -->
+            <h3>Watch the Latest Climate News Report:</h3>
+            <iframe 
+                src="https://www.youtube.com/embed/aqz-KE-bpKQ" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allowfullscreen>
+            </iframe>
+        </section>
+
+        <section class="main-article" id="sports">
+            <h2>🏆 Sports Update: Cricket World Cup Highlights</h2>
+            <img src="https://cdn.pixabay.com/photo/2017/01/12/14/30/cricket-1974364_1280.jpg" alt="Cricket Match">
+            <p>
+                The Cricket World Cup brought excitement to fans worldwide. 
+                Catch the latest match summary on the 
+                <a href="https://www.icc-cricket.com" target="_blank">ICC Official Website</a>.
+            </p>
+        </section>
+
+        <section class="main-article" id="entertainment">
+            <h2>🎬 Entertainment Buzz: New Movie Release</h2>
+            <p>
+                The much-awaited movie "Rise of the Future" is now showing in theaters. 
+                Check out the <a href="https://www.imdb.com/" target="_blank">IMDb reviews</a> before watching!
+            </p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>📞 Contact us: info@globaltimes.com | 🌐 <a href="https://globaltimes.com" style="color: #f1c40f;">Visit our website</a></p>
+        <p>© 2025 Global Times. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
