@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Booking Form</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right,#6dd5fa,#2980b9);
+        }
+
+        .container{
+            width: 400px;
+            background: white;
+            padding: 25px;
+            margin: 60px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+
+        h2{
+            text-align: center;
+            color: #2980b9;
+        }
+
+        label{
+            font-weight: bold;
+        }
+
+        input, select{
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0 15px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .gender{
+            width: auto;
+        }
+
+        button{
+            width: 100%;
+            padding: 10px;
+            background: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover{
+            background: #1f6391;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Hotel Booking Form</h2>
+
+    <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter phone number" required>
+
+        <label>Check-in Date</label>
+        <input type="date" required>
+
+        <label>Check-out Date</label>
+        <input type="date" required>
+
+        <label>Room Type</label>
+        <select>
+            <option>Single Room</option>
+            <option>Double Room</option>
+            <option>Deluxe Room</option>
+            <option>Suite</option>
+        </select>
+
+        <label>Number of Guests</label>
+        <input type="number" min="1" max="10">
+
+        <label>Gender</label><br>
+        <input type="radio" name="gender" class="gender"> Male
+        <input type="radio" name="gender" class="gender"> Female
+
+        <br><br>
+
+        <button type="submit">Book Now</button>
+    </form>
+</div>
+
+</body>
+</html>
